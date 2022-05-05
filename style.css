@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyGy6BoWgzfDYlpw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url(pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  background: #444;
+  padding-top: 10px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+nav ul li {
+  list-style: none;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+}
+
+nav span {
+  margin-right: 20px;
+}
+
+nav span button {
+  margin-right: 10px;
+}
+
+.google-btn {
+  width: 100%;
+  height: 42px;
+  background-color: #4285f4;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .25);
+  margin-bottom: 15px;
+}
+
+.google-icon-wrapper {
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 1px;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.google-icon {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+}
+.fb-btn {
+  width: 100%;
+  height: 42px;
+  background-color: #4267B2;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .25);
+}
+
+.fb-icon-wrapper {
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 1px;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fb-icon {
+  position: absolute;
+  width: 37px;
+  height: 37px;
+}
+
+.btn-text {
+  float: left;
+  margin: 11px 0 0 50px;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+
+.btn-text:hover {
+  box-shadow: 0 0 6px #4285f4;
+}
+
+.btn-text:active {
+  background: #1669F2;
+}
+
+.formbx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 50%;
+}
+form {
+  background: #fff;
+  padding: 30px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 5px 43px rgba(0, 0, 0, .45);
+  transition: 0.5s ease-in-out;
+  border-radius: 8px;
+}
+.or {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  height: 2px;
+  width: 100%;
+  background: #999;
+  position: relative;
+}
+.or::before {
+  content: 'OR';
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #fff;
+  padding: 0 4px;
+}
+.input-group{
+  margin-bottom: 10px;
+}
+.input-group input {
+  padding: 10px;
+  border: 1px solid #999;
+  outline: none;
+  width: 100%;
+  border-radius: 3px;
+}
+form h3 {
+  font-weight: 600;
+}
+form .input-group .signupbtn, 
+form .input-group .loginbtn{
+  width: 100%;
+  background: #4285f4;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  padding: 8px;
+}
+.btn-success a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+.btn-light a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+.alertbox {
+  position: relative;
+  width: 100%;
+  padding: 12px;
+  color: #fff;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  transition: opacity 0.5s ease-in-out;
+}
+.alert-danger {
+  background: #f44336;
+}
+.alert-success {
+  background: #04AA6D;
+}
+.alert-info {
+  background: #2196F3;
+}
+.alert-warning {
+  background: #ff9800;
+}
+.close {
+  padding: 0 8px;
+  border: none;
+  outline: none;
+  background: none;
+  color: #555;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 600px){
+  form {
+    padding: 10px;
+    width: 95%;
+    margin: 10px;
+  }
+  .formbx {
+   margin-top: 0;
+ }
+}
